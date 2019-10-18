@@ -21,6 +21,19 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+
+  - name: "videos"
+    label: "videos"
+    folder: "src/pages/videos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "video-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "string"}
+      - {label: "videoId", name: "videoId", widget: "string"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+
   - name: "pages"
     label: "Pages"
     files:
